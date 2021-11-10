@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;  
+        }
+        body{
+            font: 14px georgia, serif;
+            background: #ccc;
+        }
+        article,
+        aside,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section{
+            display: block;
+        }
+        h2{
+            font: 24px Georgia;
+            margin: 0 0 10px 0;
+        }
+        h3{
+            margin: 0 0 10px 0;
+        }
+        p{
+            margin: 0 0 20ox 0;
+        }
+        #fluid-wrap{
+            width: 70%;
+            margin: 60px auto;
+            padding: 20px;
+            background: #eee;
+            overflow: hidden;
+        }
+        #sidebar{
+            width: 35%;
+            float: left;
+        }
+        #sidebar ul{
+            list-style: none;
+        }
+        #sidebar ul li a{
+            color: #900;
+            text-decoration: none;
+            padding: 3px 0;
+            display: block;
+        }
+
+        @media all and (min-width:1001px){
+            #sidebar ul li a:after{
+                content: " ("attr(data-email)") ";
+                font-size: 11px;
+                font-style: italic;
+                color: #666;
+            }
+        }
+
+        @media all and (max-width:1000px) and (min-width:700px) {
+            #sidebar ul li a::before{
+            content: "email:";
+            font-style: italic;
+            color: #666;
+        }
+        }
+
+
+        @media all and (max-width:699px) and (min-width:520), (min-width:1151px){
+            #sidebar ul li a {
+                padding-left: 21px;
+                background: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg) left center no-repeat;
+            }
+        }
+
+        #mai-content{
+            width: 65%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="fluid-wrap">
+        <div id="sidebar">
+            <h3>team apna college</h3>
+            <ul id="nav">
+                <li><a data-email="dhattarwalaman97@gmail.com" href="mailto:amandhattarwal97@gmail.com">Aman Dhatterwal</a></li>
+                <li><a data-email="rahulneha@likeher.com" href="mailto:neharahul@me.com">Rahul kumar</a></li>
+                <li><a data-email="neharahul@me.com" href="mailto:neharahul@me.com">Neha Sharma</a></li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <p>baba black sheep have you any wool</p>
+            <p>yes turakda yes turakada three trakda full</p>
+        </div>
+    </div>
+</body>
+</html>
