@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            display: flex;
+        }
+        .first div{
+            background-color: red;
+            padding: 5px;
+            border-radius: 30px;
+            flex-grow: 1;
+            font-size: larger;
+            margin: 3px;
+        }
+        div.one{
+            display: flex;
+            padding: 0;
+        }
+        .one div{
+            flex-grow: 1;
+            background-color: black;
+            color: white;
+            margin: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div>
+            1
+            <div class="one">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </div>
+            <div class="one">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+            <div class="one">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>   
+            </div>
+        </div>    
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="first">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <div class="first">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>
