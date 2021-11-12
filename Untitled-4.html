@@ -6,72 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #t{
-            width: 20%;
-            float: left;
+        .container{
+            display: grid;
+            grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+            grid-auto-rows: minmax(100px,auto);
+            grid-gap: 20px;
+            row-gap: 30px;
         }
-        .first{
-            background: silver;
-            text-align: center;
-            overflow: hidden;
-            border: hidden;
-            border-radius: 5px;
-            margin: 0.5%;
+        .item{
+            background-color: lightpink;
+            border: 3px green solid;
+            border-radius: 3px;
         }
-        .second{
-            background: rgb(228, 228, 228);
-            text-align: center;
-            overflow: hidden;
-            border: hidden;
-            border-radius: 5px;
-            margin: 0.5%;
+        #item-1{
+            grid-column-start: 1;
+            grid-column-end: 6;
         }
-        .third{
-            background: hsl(0, 0%, 75%);
-            text-align: center;
-            overflow: hidden;
-            border: hidden;
-            border-radius: 5px;
-            margin: 0.5%;
+        .item-1{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
         }
-        .forth{
-            background: rgb(139, 137, 137);
-            text-align: center;
-            overflow: hidden;
-            border: hidden;
-            border-radius: 5px;
-            margin: 0.5%;
-        }
-        @media all and (min-width: 700px) and (max-width: 1000px){
-            #t{
-                width: 25%;
-            }
-        }
-        @media all and (min-width: 300px) and (max-width: 699px){
-            #t{
-                width: 50%;
-            }
+        .nested{
+            border: 3px greenyellow solid;
+            border-radius: 3px;
+            background-color: rgb(142, 209, 156);
         }
     </style>
 </head>
 <body>
-    <div class="all" >
-    <div class="first" id="t">
-    <h3>first fruit</h3>
-    <p>apple</p>
-</div>
-<div class="second" id="t">
-    <h3>second fruit</h3>
-    <p>orange</p>
-</div>
-<div class="third" id="t">
-    <h3>third fruit</h3>
-    <p>banana</p>
-</div>
-<div class="forth" id="t">
-    <h3>forth fruit</h3>
-    <p>graps</p>
-</div>
-</div>
+    <div class="container">
+        <div class="item item-1" id="item-1">
+            <div class="nested">box in box 1</div>
+            <div class="nested">box in box 2</div>
+            <div class="nested">box in box 3</div>
+        </div>
+        <div class="item" id="item-2">box 2</div>
+        <div class="item">box 3</div>
+        <div class="item">box 4</div>
+        <div class="item">box 5</div>
+    </div>
 </body>
 </html>
