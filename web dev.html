@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first website</title>
+    <link rel="stylesheet" href="web.css" />
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Baloo Bhaijaan">
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url(https://www.yofitnutrition.com/uploads/team/1dfa5d1fff6c922ba2d2a74f21d5f9e8.jpg) ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: white;
+        font-family: Baloo Bhaijaan;
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        top: 0px;
+      }
+      .mid {
+        display: block;
+        width: 53%;
+        margin: 10px auto;
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+      }
+      .navbar{
+        display: inline-block;
+      }
+      .navbar li{
+        display: inline-block;
+        font-size: 15px;
+      }
+      .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 36px;
+      }
+      .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(163, 159, 159);
+      }
+      .left img{
+        width: 90px;
+        filter: invert(100%);
+      }
+      .left div{
+        text-align: center;
+        font-size: 20px;
+      }
+      .btn{
+        margin: 0px 5px;
+        color: white;
+        background-color: black;
+        padding: 5px 14px ;
+        border: 2px grey solid;
+        border-radius: 9px;
+        cursor: pointer;
+        font-family: Baloo Bhaijaan;
+      }
+      .btn:hover{
+        background-color: rgb(61, 60, 60);
+      }
+      .container{
+        border: 2px solid white;
+        margin: 50px 15px;
+        padding: 20px;
+        border-radius: 15px;
+        width: 18%;
+      }
+      .form-group input{
+        text-align: center;
+        display: block;
+        width: 150px;
+        padding: 8px;
+        border: 2px solid black;
+        margin: 3px auto;
+        border-radius: 6px;
+        font-size: 15px;
+        font-family: Baloo Bhaijaan;
+      }
+      .container h3{
+        text-align: center;
+      }
+      .form-group button{
+        display: block;
+        width: 30%;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+
+      <div class="left">
+        <div class="left">
+          <img src="https://media.istockphoto.com/vectors/raw-fitness-dumbbell-icon-on-rough-background-vector-id605984616?k=20&m=605984616&s=612x612&w=0&h=d-NrqRw_dqTGc9oYaxO6syvhRCRB5jjmEX9_5Nuxu6k=" alt="logo">
+        </div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Fitness Calculator</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">call us now</button>
+        <button class="btn">email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h3>join the best gym now</h3>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" id="" placeholder="enter your name">
+          <input type="text" name="" id="" placeholder="enter your phone no.">
+          <input type="text" name="" id="" placeholder="enter your age">
+          <input type="text" name="" id="" placeholder="enter your gender">
+          <button class="btn">submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
