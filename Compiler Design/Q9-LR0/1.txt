@@ -1,0 +1,19 @@
+String (id)
+S->(id)
+S->#
+
+  (  )  $  id S
+0 S3       S1 2
+1 R2 R2 R2 R2 
+2       Ac 
+3 S3       S1 4
+4    S5
+5 R0 R0 R0 R0
+
+Parsing Stack        String        Action
+$0                    (id)$          S3
+$0S3                   id)$          S1
+$0S3S1                   )$          R2
+$0S3S4                   )$          S5
+$0S3S4S5                  $          R0
+$0S2                      $          Accept
