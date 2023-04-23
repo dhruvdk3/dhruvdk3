@@ -1,1 +1,0 @@
-printf(" Follow(%c) = { ", ck);
