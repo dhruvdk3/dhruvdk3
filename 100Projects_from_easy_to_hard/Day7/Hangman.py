@@ -75,17 +75,16 @@ stages = ['''
 display = []
 for _ in range(len(chosen_word)):
     display.append("_")
-x=0
+
 lives = 6
 while (True):
     guess = input("Guess a letter: ").lower()
-    i,a= 0,0
+    i= 0
     if guess in chosen_word:
         for letter in chosen_word:
             if letter == guess:
                 display.pop(i)
                 display.insert(i, letter)
-                a+=1
                 i += 1
             else:
                 i += 1
