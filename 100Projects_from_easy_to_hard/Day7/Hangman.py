@@ -1,3 +1,4 @@
+import os
 import random
 from words import word_list
 logo = ''' 
@@ -79,6 +80,7 @@ for _ in range(len(chosen_word)):
 lives = 6
 while (True):
     guess = input("Guess a letter: ").lower()
+    os.system('clear')
     i= 0
     if guess in chosen_word:
         for letter in chosen_word:
