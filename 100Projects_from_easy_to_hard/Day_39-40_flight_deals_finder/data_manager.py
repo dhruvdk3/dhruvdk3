@@ -1,8 +1,8 @@
 import requests
 
-SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/37c17665036441002b38742796dd518f/flightDeals/prices"
+SHEETY_PRICES_ENDPOINT = "endpoint"
 header = {
-    "Authorization": "Bearer 1qazxsw23edcvfr4"
+    "Authorization": "key"
 }
 
 class DataManager:
